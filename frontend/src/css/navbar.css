@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  height: 1000px;
+}
+
+img {
+  width: 90%;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+

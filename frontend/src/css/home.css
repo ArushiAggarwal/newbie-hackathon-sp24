@@ -1,0 +1,80 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 20%;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+#container{
+  width: 450px; }
+  .col-1{
+  width: 200px; float: left; color: green; font-weight: bold;
+  text-align: center; margin: 10px; border-radius: 20px; background: yellow; }
+  .col-2{
+  width: 200px; float: right; color: green; font-weight: bold;
+  text-align: center; margin: 10px; border-radius: 20px; background: orange; }	
+  p{ font-size: 20px; }
+
+
+  .spotify-player button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .circle-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .triangle-button {
+    height: 0;
+    width: 0;
+    border: 25px solid transparent;
+    border-top-color: white;
+  }
+  
+  .previous {
+    border-right-color: white;
+    transform: rotate(180deg);
+  }
+  
+  .next { 
+    border-left-color: white;
+  }
+  
+  
+  
