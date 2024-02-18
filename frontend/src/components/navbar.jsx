@@ -9,16 +9,16 @@ const Navbar = () => {
       <ul className="navbar-list">
         <li className="navbar-item">
           <Link to="/home">
-            <img src={HomeIcon} alt="home_button.webp" /> 
+            <img src={HomeIcon} alt="home_button.webp" />
           </Link>
         </li>
         <li className="navbar-item">
           <Link to="/library">
-            <img src={LibraryIcon} alt="library.png" /> 
+            <img src={LibraryIcon} alt="library.png" />
           </Link>
         </li>
       </ul>
-  </nav>
+    </nav>
   )
 }
 
