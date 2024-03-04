@@ -7,6 +7,7 @@ import Guts from '../image/guts.jpeg'
 import Record from '../image/therecord.webp'
 import Easy from '../image/easy.jpg'
 import Tunnel from '../image/tunnel.png'
+import Djdevs from '../image/djdevs.png'
 
 const Library = () => {
   return (
@@ -21,7 +22,7 @@ const Library = () => {
             Newbie Night
           </h2>
 
-          <img src= {Image} alt="Playlist" className = "newbie-pic"/>
+          <img src= {Djdevs} alt="Playlist" className = "newbie-pic"/>
           {/* <span id="playlist-img"></span> */}
         </div>
 
