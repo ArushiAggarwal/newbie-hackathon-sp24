@@ -24,7 +24,7 @@ const Blur = () => {
           <div className="column1">
             <div className="c1r1">
               <h2 className="blur-song">Perfect Places</h2>
-              <p className='genre'>Alternative/Indie</p>
+              <p className='genre'>Music Genre</p>
             </div>
             <div className="c1r21">
               <img src = {AlbumLogo} alt = "Melodrama Album" className='blur-album'></img>
@@ -81,7 +81,7 @@ const Blur = () => {
               </div>
             </div>
             <div className="c2r4">
-              <h2>Peace Coming Up...</h2>
+              <h2>Guess The Song!</h2>
             </div>
           </div>
         </div>
