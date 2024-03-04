@@ -1,9 +1,15 @@
 import React from 'react'
+import AlbumLogo from '../image/album.jpg'
+import Lover from '../image/lover.png'
+import Guts from '../image/guts.jpeg'
+import Record from '../image/therecord.webp'
 import '../css/home.css'
-
-import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShuffle } from '@fortawesome/free-solid-svg-icons';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faBackward } from '@fortawesome/free-solid-svg-icons';
+import { faForward } from '@fortawesome/free-solid-svg-icons';
+import { faReply } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   return (
@@ -14,51 +20,67 @@ const Home = () => {
 
       <main>
         <div className="row">
-          <div className="column1" style={{ backgroundColor: '#aaa' }}>
+          <div className="column1">
             <div className="c1r1">
-              <h2>Song Title</h2>
-              <p>Some text..</p>
+              <h2 className='song-name'>Perfect Places</h2>
+              <p className='genre'>Alternative/Indie</p>
             </div>
             <div className="c1r2">
-              <h2>Song IMG</h2>
-              <p>Some text..</p>
+              <img src = {AlbumLogo} alt = "Melodrama Album"></img>
             </div>
             <div className="c1r3">
               <p className="artist">Lorde</p>
-              <p className="person-queued">Brandon Lerit</p>
+              <p className="person-queued"><span className='small'>Queued By</span>Alisha</p>
             </div>
             <div className="c1r4">
-
-              <div className="spotify-player" id="button">
-                <button>
-                  <SkipPreviousIcon />
-                </button>
-
-                <button>
-                  <PlayCircleFilledWhiteIcon />
-                </button>
-
-                <button>
-                  <SkipNextIcon />
-                </button>
-
+              <div className='icon-box'>
+                <FontAwesomeIcon icon={faShuffle} className='icon' />
+                <FontAwesomeIcon icon={faBackward} className='icon'/>
+                <FontAwesomeIcon icon={faPlay} className='icon'/>
+                <FontAwesomeIcon icon={faForward} className='icon'/>
+                <FontAwesomeIcon icon={faReply} className='icon'/>
               </div>
-
             </div>
           </div>
-          <div className="column2" style={{ backgroundColor: '#bbb' }}>
+          <div className="column2">
             <div className="c2r1">
               <h2>Bio About Artist</h2>
-              <p>Some text..</p>
+              <p className='bio'>Ella Marija Lani Yelich-O'Connor (born 7 November 1996), known professionally as Lorde (/lɔːrd/ LORD), is a New Zealand singer and songwriter. She is known for her unconventional style of pop music, and introspective songwriting.</p>
             </div>
             <div className="c2r2">
               <h2>Recommendations</h2>
-              <p>Some text..</p>
-
             </div>
             <div className="c2r3">
-              <h2>Next Song</h2>
-              <p>Some text..</p>
+              <div className='song-rec'>
+                <p>
+                  Cool About It
+                </p>
+                <img src={Record} alt="Album"></img>
+                <p>
+                  Boygenius
+                </p>
+              </div>
+              <div className='song-rec'>
+                <p>
+                  Lover 
+                </p>
+                <img src={Lover} alt="Album"></img>
+                <p>
+                  Taylor Swift
+                </p>
+              </div>
+              <div className='song-rec'>
+                <p>
+                  Vampire 
+                </p>
+                <img src={Guts} alt="Album"></img>
+                <p>
+                  Olivia Rodrigo
+                </p>
+              </div>
+            </div>
+            <div className="c2r4">
+              <h2>Peace Coming Up...</h2>
             </div>
           </div>
         </div>
